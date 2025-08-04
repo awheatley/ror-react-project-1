@@ -29,7 +29,7 @@ export default function PostDetails() {
   if (!post) {
     return (
       <h2>Loading...</h2>
-    );
+    )
   }
 
   return (
