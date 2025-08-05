@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import PostsList from "./PostsList";
 import PostDetails from "./PostDetails";
 import NewPostForm from "./NewPostForm";
+import PostEditForm from "./PostEditForm";
 
 export default function AppRoutes() {
   return (
@@ -10,6 +11,7 @@ export default function AppRoutes() {
       <Route path="/" element={<PostsList />} />
       <Route path="posts/:id" element={ <PostDetails /> } />
       <Route path="/new" element={ <NewPostForm /> } />
+      <Route path="/posts/:id/edit" element={ <PostEditForm /> } />
     </Routes>
   );
 }
