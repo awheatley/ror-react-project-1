@@ -53,6 +53,8 @@ export default function PostDetails() {
     <div>
       <h2>{post.title}</h2>
       <p>{post.body}</p>
+      <Link to={`/posts/${post.id}/edit`}>Edit</Link>
+      { " | "}
       <Link to="/">Back to posts</Link>
       { " | "}
       <button onClick={deletePost}>Delete</button>
